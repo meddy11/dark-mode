@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.switch{
+	position: absolute;
+	top:35px;
+	right: 50px;
+	border: 2px solid #00151f;
+	width: 45px;
+	height: 20px;
+	border-radius: 20px;
+	background: #fff;
+	cursor: pointer;
+}
+.switch:before{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	border: 2px solid #00151f;
+	width: 12px;
+	height: 12px;
+	background: #00151f;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.content{
+	margin: 100px auto;
+	width: 1000px;
+}
+.content p{
+	text-align: justify;
+}
+.nightMode{
+	background: #00151f;
+	color:#fff;
+}
+.switch.active:before{
+	left: 25px;
+	background: #fff;
+	border:2px solid #fff;
+}
+.switch.active{
+	background: transparent;
+	border: 2px solid #fff;
+}
